@@ -9,7 +9,7 @@ This repository provides a framework for evaluating the conceptual grounding of 
 - Dimension-wise Analysis: The repository currently supports a dimension-wise analysis of conceptual representations in LLMs.
 
 ## Requirements
-**Python version**: 3.11.7
+**Python version**: 3.11.7<br>
 **Dependencies**:  Ensure you have the required packages installed by running:
   ```bash
   pip install -r requirements.txt
@@ -25,9 +25,9 @@ python scripts/aggregated.py \
 ```
 
 ## Arguments
---human_aggregated_directory: Directory containing human-annotated concept data.
---model_directory: Directory containing model-generated representations.
---output_path: Path to save the analysis output.
+--human_aggregated_directory: Directory containing human-annotated concept data.<br>
+--model_directory: Directory containing model-generated representations.<br>
+--output_path: Path to save the analysis output.<br>
 
 ## Planned Updates
 TODO
