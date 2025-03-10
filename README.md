@@ -23,15 +23,27 @@ python scripts/aggregated.py \
   --model_directory example_files/model \
   --output_path example_files/test_output.csv
 ```
-Note that 
+### Human data
+The pipeline uses word-level human data
+- For the Glasgow norms, the word-level data is accessible at [https://doi.org/10.3758/s13428-018-1099-3].
+- For the Lancaster norms, the word-level data is accessible at [https://embodiedcognitionlab.shinyapps.io/sensorimotor_norms/]
+- Make sure that in the directory pointing to human data, **the Glasgow norms should be renamed to glasgow_human.csv and the Lancaster norms should be renamed to lancaster_human.csv.**
+### Model responses
+- Model responses should be organized into separate CSV files, with one file per model. Glasgow and Lancaster responses should be saved in separate files.
+- **File names must follow the format {dataset}_{model}.csv**, where dataset should be either *glasgow* or *lancaster*, and model should be the name of your model.
+- Please refer to example_files/model for example files.
 
-## Arguments
+### Arguments
 --human_aggregated_directory: Directory containing human-annotated concept data.<br>
 --model_directory: Directory containing model-generated representations.<br>
 --output_path: Path to save the analysis output.<br>
+### Output
+- the pipeline will output a csv file and a png file.
+- The csv file contains model-human correlations (spearman coefficient, 95% CI, and significance value) for each model and dimension.
+- The png file presents dimension-wise model-human correlations separately for each model.
 
 ## Planned Updates
-TODO
+- Simplify the format of input files
 
 ## Contributions
 We welcome contributions from the research community! If you have suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
@@ -40,11 +52,11 @@ We welcome contributions from the research community! If you have suggestions, f
 If you use this repository in your research, please cite our paper:
 
 ```bibtex
-@article{YourCitationHere,
-  author = {Authors},
+@article{llmwithoutgrounding,
+  author = {Qihui Xu, Yingying Peng, Samuel Nastase, Martin Chodorow, Minghua Wu, Ping Li},
   title = {Large Language Models without Grounding Recover Non-Sensorimotor but Not Sensorimotor Features of Human Concepts},
   journal = {arXiv},
-  year = {202X},
+  year = {2025},
   url = {your-arxiv-link-here}
 }
 ```
