@@ -1,6 +1,6 @@
 # chatgpt_grounding
 ## Overview
-This repository provides a framework for evaluating the conceptual grounding of Large Language Models (LLMs), based on the findings from the paper Large Language Models without Grounding Recover Non-Sensorimotor but Not Sensorimotor Features of Human Concepts ([arXiv link]). Our analysis investigates how well LLMs capture different dimensions of human conceptual knowledge, distinguishing between sensorimotor and non-sensorimotor features.
+This repository provides a framework for evaluating the alignment of conceptual representation between Large Language Models (LLMs) and humans, based on the findings from the paper Large Language Models without Grounding Recover Non-Sensorimotor but Not Sensorimotor Features of Human Concepts ([arXiv link]). Our analysis investigates how well LLMs capture different dimensions of human conceptual knowledge, distinguishing between non-sensorimotor, sensory, and motor domains.
 
 ## Key Features
 - Reproducible Evaluation Pipeline: We provide a Python-based pipeline that enables researchers to systematically assess various LLMs on their conceptual grounding.
@@ -23,6 +23,7 @@ python scripts/aggregated.py \
   --model_directory example_files/model \
   --output_path example_files/test_output.csv
 ```
+Note that 
 
 ## Arguments
 --human_aggregated_directory: Directory containing human-annotated concept data.<br>
