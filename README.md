@@ -8,7 +8,11 @@ This repository provides a framework for evaluating the alignment of conceptual 
 - Recent Analysis: We have recently evaluated DeepSeek, a new LLM that has gained significant attention, using our pipeline. The results were consistent with our previous findings on ChatGPT and Google LLMs. The evaluation is included in the repository as an example.
 - Dimension-wise Analysis: The repository currently supports a dimension-wise analysis of conceptual representations in LLMs.
 
-## Requirements
+## Current progress
+
+
+
+## How to use the pipeline
 **Python version**: 3.11.7<br>
 **Dependencies**:  Ensure you have the required packages installed by running:
   ```bash
@@ -19,9 +23,9 @@ This repository provides a framework for evaluating the alignment of conceptual 
 To run the dimension-wise analysis, execute the following command:
 ```bash
 python scripts/aggregated.py \
-  --human_aggregated_directory example_files/human \
-  --model_directory example_files/model \
-  --output_path example_files/test_output.csv
+  --human_aggregated_directory scripts/example_files/human \
+  --model_directory scripts/example_files/model \
+  --output_path scripts/example_files/test_output.csv
 ```
 ### Human data
 The pipeline uses word-level human data
