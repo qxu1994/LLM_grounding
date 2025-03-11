@@ -246,7 +246,7 @@ def correlation(model_path, human_aggregated_path):
         human_values = []
 
         common_words = list(set(model['Word'])&set(list(human_dict.keys())))
-        print(f'# of overlapping words between human and model ratings in {dimension}: {len(common_words)}')
+
 
         for word in common_words:
             column_name = f"{dimension}_mean"
@@ -266,6 +266,7 @@ def correlation(model_path, human_aggregated_path):
             # (Make sure the word is in human_dict; otherwise handle missing)
             human_values.append(human_dict[word])
 
+        print(f'# of words analyzed in {dimension}: {len(model_values)}')
         # Spearman correlation
         statistic, p_value = spearmanr(model_values, human_values)
 
