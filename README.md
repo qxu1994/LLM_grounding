@@ -13,6 +13,11 @@ This repository provides a framework for evaluating the alignment of conceptual 
 
 
 ## How to use the pipeline
+**We welcome contributions from the research community!** <br>
+There are two ways to use the pipeline. One option is to contribute to the current progress by submitting your model files in the required format (see Model responses). If you're willing to submit your model files to us and make your results publicly visible, we can run the evaluations for you and include your model’s evaluation results in the Current Progress section, with proper credit for your contribution.<br>
+
+Alternatively, you can clone the repository, follow the steps below, and run the evaluations independently.
+
 **Python version**: 3.11.7<br>
 **Dependencies**:  Ensure you have the required packages installed by running:
   ```bash
@@ -25,7 +30,7 @@ To run the dimension-wise analysis, execute the following command:
 python scripts/aggregated.py \
   --human_aggregated_directory scripts/example_files/human \
   --model_directory scripts/example_files/model \
-  --output_path scripts/example_files/test_output.csv
+  --output_path test_output.csv
 ```
 ### Human data
 The pipeline uses word-level human data
@@ -49,8 +54,6 @@ The pipeline uses word-level human data
 ## Planned Updates
 - Simplify the format of input files
 
-## Contributions
-We welcome contributions from the research community! If you have suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
 
 ## Citation
 If you use this repository in your research, please cite our paper:
@@ -64,8 +67,9 @@ If you use this repository in your research, please cite our paper:
   url = {your-arxiv-link-here}
 }
 ```
+
 ## Contact
-For any questions or collaboration inquiries, please reach out via [qihuixu01@gmail.com].
+If you have suggestions or bug reports, please open an issue or submit a pull request. For any other questions or collaboration inquiries, please reach out via qihuixu01 [at] gmail [dot] com
 
 
 
