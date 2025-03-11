@@ -55,14 +55,6 @@ The pipeline uses word-level human data
 ## Planned Updates
 - Simplify the format of input files
 
-
-## Citation
-If you use this repository in your research, please cite our paper:
-
-```bibtex
-
-```
-
 ## Contact
 If you have suggestions or bug reports, please open an issue or submit a pull request. For any other questions or collaboration inquiries, please reach out via qihuixu01 [at] gmail [dot] com
 
