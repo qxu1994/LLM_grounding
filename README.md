@@ -9,6 +9,7 @@ This repository provides a framework for evaluating the alignment of conceptual 
 - Dimension-wise Analysis: The repository currently supports a dimension-wise analysis of conceptual representations in LLMs.
 
 ## Current progress
+![Alt text](figures/test_output.png)
 
 
 
