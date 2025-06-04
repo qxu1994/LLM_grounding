@@ -1,6 +1,6 @@
 # Language Models and grounding
 ## Overview
-This repository provides a framework for evaluating the alignment of conceptual representation between Large Language Models (LLMs) and humans, based on the findings from the paper Large Language Models without Grounding Recover Non-Sensorimotor but Not Sensorimotor Features of Human Concepts (Accepted). Our analysis investigates how well LLMs capture different dimensions of human conceptual knowledge, distinguishing between non-sensorimotor, sensory, and motor domains.
+This repository provides a framework for evaluating the alignment of conceptual representation between Large Language Models (LLMs) and humans, based on the findings from the paper [Large Language Models without Grounding Recover Non-Sensorimotor but Not Sensorimotor Features of Human Concepts](https://www.nature.com/articles/s41562-025-02203-8). Our analysis investigates how well LLMs capture different dimensions of human conceptual knowledge, distinguishing between non-sensorimotor, sensory, and motor domains.
 
 ## Key Features
 - Reproducible Evaluation Pipeline: We provide a Python-based pipeline that enables researchers to systematically assess various LLMs on their conceptual grounding.
@@ -58,6 +58,19 @@ The pipeline uses word-level human data
 ## Contact
 If you have suggestions or bug reports, please open an issue or submit a pull request. For any other questions or collaboration inquiries, please reach out via qihuixu01 [at] gmail [dot] com
 
+## Citation
+If you would like to our data or code, please cite:
+
+```bibtex
+@article{xu2025llm,
+  title={Large language models without grounding recover non-sensorimotor but not sensorimotor features of human concepts},
+  author={Xu, Qihui and Peng, Yixuan and Nastase, Sam A. and others},
+  journal={Nature Human Behaviour},
+  year={2025},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41562-025-02203-8},
+  url={https://doi.org/10.1038/s41562-025-02203-8}
+}
 
 
 
